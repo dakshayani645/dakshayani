@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+
+    <section id="products">
+        <h2>Products</h2>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 1">
+            <p>Product 1</p>
+            <p>$10.00</p>
+            <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 2">
+            <p>Product 2</p>
+            <p>$20.00</p>
+            <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product 3">
+            <p>Product 3</p>
+            <p>$30.00</p>
+            <button onclick="addToCart('Product 3', 30)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div id="total">
+            <p>Total: $<span id="total-price">0.00</span></p>
+        </div>
+        <button id="checkout-btn">Proceed to Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shopping Cart Example</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
